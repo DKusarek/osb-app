@@ -1,0 +1,11 @@
+<div class="gallery-container">
+  <mat-grid-list [cols]="cols" rowHeight="1:1" gutterSize="24">
+    <mat-grid-tile *ngFor="let image of images">
+      <div class="tile-content">
+        <mat-card class="image-card" (click)="openImageModal(image)">
+          <img mat-card-image [src]="image.src" [alt]="image.alt">
+        </mat-card>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

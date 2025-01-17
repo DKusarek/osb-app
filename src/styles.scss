@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --gold: #FFD700;
+  --gold-dark: #DAA520;
+  --background-dark: #121212;
+  --surface-dark: #1E1E1E;
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+}
+
+html, body { 
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body { 
+  background-color: var(--background-dark);
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  color: var(--text-primary);
+}
+
+.image-modal-dialog {
+  .mat-mdc-dialog-container {
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.image-modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.95);
+}

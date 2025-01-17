@@ -1,0 +1,25 @@
+.modal-container {
+  position: relative;
+  padding: 16px;
+  
+  .close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  
+  img {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
