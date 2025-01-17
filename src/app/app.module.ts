@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageModalComponent } from './image-modal/image-modal.component';
 import { VideoComponent } from './video/video.component';
+import { PlayButtonComponent } from './play-button/play-button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VideoComponent } from './video/video.component';
     HeaderComponent,
     GalleryComponent,
     ImageModalComponent,
-    VideoComponent
+    VideoComponent,
+    PlayButtonComponent
   ],
   imports: [
     BrowserModule,
