@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-video',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./video.component.scss']
 })
 export class VideoComponent {
-  // Video will be controlled by play button component
+  @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
+
+  getVideoElement(): HTMLVideoElement | null {
+    return this.videoPlayer?.nativeElement || null;
+  }
 }

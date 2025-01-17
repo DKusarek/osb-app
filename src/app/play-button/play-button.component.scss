@@ -1,6 +1,6 @@
 .play-button {
   background: linear-gradient(45deg, var(--gold) 0%, var(--gold-dark) 100%);
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0.8;
   width: 120px !important;
   height: 120px !important;
@@ -11,10 +11,17 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  
+
   &:hover {
     transform: translate(-50%, -50%) scale(1.1);
     opacity: 1;
+  }
+
+  &.clicked {
+    opacity: 0.1;
+    &:hover {
+      opacity: 0.3;
+    }
   }
   
   ::ng-deep .mat-icon {

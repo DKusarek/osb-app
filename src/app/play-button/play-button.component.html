@@ -1,3 +1,3 @@
-<button mat-fab color="primary" (click)="togglePlayback()" class="play-button">
+<button mat-fab color="primary" (click)="togglePlayback()" class="play-button" [class.clicked]="hasBeenClicked">
   <mat-icon>{{ isPlaying ? 'pause' : 'play_arrow' }}</mat-icon>
 </button>

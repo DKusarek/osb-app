@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  thankYouNote = 'Serdecznie dziękujemy za znalezienie grzybów i pomoc w ich dokumentacji! 🍄';
+  thankYouNote = 'Dziękujemy za znalezienie grzybów i pomoc w ich dokumentacji!';
+  emojis = '🍄❤️🐈‍⬛ 🍄❤️🐈‍⬛ 🍄❤️🐈‍⬛'
 }
